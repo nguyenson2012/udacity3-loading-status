@@ -1,4 +1,4 @@
-package com.udacity.asteroidradar
+package com.udacity
 
 import org.junit.Test
 

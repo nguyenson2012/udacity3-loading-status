@@ -1,0 +1,10 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="default_text_size">20sp</dimen>
+    <dimen name="margin_radio_group">16dp</dimen>
+    <dimen name="radio_btn_height">48dp</dimen>
+    <dimen name="height_loading_button">60dp</dimen>
+    <dimen name="margin_loading_button">20dp</dimen>
+    <dimen name="margin_filename">20dp</dimen>
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <Transition
+        app:constraintSetStart="@+id/start"
+        app:constraintSetEnd="@+id/end"
+        app:duration="2000"
+        app:autoTransition="animateToEnd">
+        <KeyFrameSet>
+            <KeyAttribute
+                app:framePosition="50"
+                app:motionTarget="@id/tv_status_value"
+                android:scaleY="2.0"
+                android:scaleX="2.0" />
+        </KeyFrameSet>
+    </Transition>
+    <ConstraintSet android:id="@+id/start_constraint">
+        <Constraint
+            android:id="@id/tv_status_value"
+            android:alpha="0.0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/tv_filename_value"
+            app:layout_constraintTop_toBottomOf="@+id/tv_filename_value" />
+    </ConstraintSet>
+    <ConstraintSet android:id="@+id/end_constraint">
+        <Constraint
+            android:id="@id/tv_status_value"
+            android:alpha="1.0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/tv_filename_value"
+            app:layout_constraintTop_toBottomOf="@+id/tv_filename_value"/>
+    </ConstraintSet>
+</MotionScene>
